@@ -1,0 +1,56 @@
+ <div class="title">
+    <div class="scroll">
+      <h1><span>~Daving Log~</span></h1>
+    </div>
+  </div>
+
+<p>
+<div class="log">
+  <% @posts.each do |post| %>
+    <ul>
+      <div class="first">
+        <li>
+          <div>
+            <%= post.id %>本目
+            <%= post.date %>
+          </div>
+          <div> 場所<%= post.place %></div>
+          <div> 天気<%= post.weather %></div>
+        </li>
+      </div>
+    
+      <div class="second">
+        <li>
+          <div>気温<%= post.temperature %></div>
+          <div>水温<%= post.water_temperature %></div>
+          <div>残圧(開始時)<%= post.SPG_start %></div>
+          <div>残圧(終了時)<%= post.SPG_finish %></div>
+          <div>エントリー<%= post.dive_start %></div>
+          <div>エキジット<%= post.dive_finish %></div>
+        </li>
+      </div>
+    
+      <div class="third">
+        <li>
+          <div>水深<%= post.depth %></div>
+          <div>風向き<%= post.wind_direction %></div>
+          <div>波  <%= post.wave %></div>
+        </li>
+      </div>
+
+      <div class="forth">
+        <li>
+          <div>出会った魚<%= post.fish %></div>
+        </li>
+      </div>
+
+      <div class="fifth">
+        <li>
+          <div>感想<%= post.impression %></div>
+        </li>
+      </div>
+  <% end %>
+  <%= link_to(posts_new_path) do %>
+    <button class="button">投稿ページへ!!!</button>
+  <% end %>
+</div>

@@ -1,0 +1,70 @@
+<div class="title">
+  <div class="scroll">
+  <h1><span>新規投稿ページ</span></h1>
+  </div>
+</div>
+<p>
+<%= form_with model: @post, local: true do |form| %>
+  <div class="log"> 
+    <div class="info">
+      <div>
+      <%= form.label :place, "場所" %><br />
+      <%= form.text_field :place, id:"post_place" %>
+      </div>
+      <div>
+      <%= form.label :weather, "天気" %><br />
+      <%= form.text_field :weather, id:"post_weather" %>
+      </div>
+      <div>
+      <%= form.label :temperature, "気温" %><br />
+      <%= form.text_field :temperature, id:"post_temperature"%>
+      </div>
+      <div>
+      <%= form.label :water_temperature, "水温" %><br />
+      <%= form.text_field :water_temperature, id:"water_temperature"%>
+      </div>
+      <div>
+      <%= form.label :SPG_start, "残圧(開始時)" %><br />
+      <%= form.text_field :SPG_start, id:"SPG_start"%>
+      </div>
+      <div>
+      <%= form.label :SPG_finish, "残圧(終了時)" %><br />
+      <%= form.text_field :SPG_finish, id:"SPG＿finish"%>
+      </div>
+      <div>
+      <%= form.label :dive_start, "エントリー" %><br />
+      <%= form.text_field :dive_start, id:"divestart"%>
+      </div>
+      <div>
+      <%= form.label :dive_finish, "エキジット" %><br />
+      <%= form.text_field :dive_finish, id:"dive_finish"%>
+      </div>
+      <div>
+      <%= form.label :depth, "水深" %><br />
+      <%= form.text_field :depth, id:"depth"%>
+      </div>
+      <div>
+      <%= form.label :wind_direction, "風向き" %><br />
+      <%= form.text_field :wind_direction, id:"wind_direction"%>
+      </div>
+      <div>
+      <%= form.label :wave, "波" %><br />
+      <%= form.text_field :wave, id:"wave"%>
+      </div>
+      <div>
+      <%= form.label :fish, "魚" %><br />
+      <%= form.text_field :fish, id:"fish"%>
+      </div>
+      <div>
+      <%= form.label :date, "日時" %><br />
+      <%= form.text_field :date, id:"date"%>
+      </div>
+      <div>
+      <%= form.label :impression, "感想" %><br />
+      <%= form.text_area :impression, id:"imperssion"%>
+      </div>
+      
+      <input type="submit" class="button">
+      </div>
+    </div>
+<% end %>
