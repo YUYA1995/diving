@@ -1,0 +1,70 @@
+
+<table>
+  <tr>
+    <th>Dive No.</th>
+    <td><%= @post.time %></td>
+  </tr>
+  <tr>
+    <th>場所</th>
+    <td><%= @post.place %></td>
+  </tr>
+  <tr>
+    <th>天気</th>
+    <td><%= @post.weather %></td>
+  </tr>
+  <tr>
+    <th>気温</th>
+    <td><%= @post.temperature %></td>
+  </tr>
+  <tr>
+    <th>水温</th>
+    <td><%= @post.water_temperature %></td>
+  </tr>
+  <tr>
+    <th>残圧(開始時)</th>
+    <td><%= @post.SPG_start %></td>
+  </tr>
+  <tr>
+    <th>残圧(終了時)</th>
+    <td><%= @post.SPG_finish %></td>
+  </tr>
+  <tr>
+    <th>エントリー</th>
+    <td><%= @post.dive_start %></td>
+  </tr>
+  <tr>
+    <th>エキジット</th>
+    <td><%= @post.dive_finish %></td>
+  </tr>
+  <tr>
+    <th>水深</th>
+    <td><%= @post.depth %></td>
+  </tr>
+  <tr>
+    <th>風向き</th>
+    <td><%= @post.wind_direction %></td>
+  </tr>
+  <tr>
+    <th>波</th>
+    <td><%= @post.wave %></td>
+  </tr>
+  <tr>
+    <th>出会った魚</th>
+    <td><%= @post.fish %></td>
+  </tr>
+  <tr>
+    <th>感想</th>
+    <td><%= @post.impression %></td>
+  </tr>
+  <tr>
+    <th>👉</th>
+    <td>
+      <%= link_to(edit_post_path) do %>
+        <button class="button">編集</button>
+      <% end %>
+      <%= link_to(posts_path) do %>
+        <button class="button">トップページへ</button> 
+      <% end %>
+    </td>
+</table> 
+

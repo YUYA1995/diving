@@ -1,11 +1,7 @@
-<div class="container">
-  新規投稿ページ
-</div>
-<P></p>
 <%= form_with model: @post, local: true do |form| %>
-  <table>
+ <table>
     <tr>
-      <th><%= form.label :time, "Dive NO." %></th>
+      <th><%= form.label :time, "Dive No." %></th>
       <td><%= form.text_field :time, id:"post_time" %></td>
     <tr>
     <tr>
@@ -72,6 +68,5 @@
         <% end %>
         <input type="submit" class="button">
       </td>
-    </tr>
-    </table>
+  </table>
 <% end %>
