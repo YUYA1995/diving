@@ -2,7 +2,7 @@
   新規投稿ページ
 </div>
 <P></p>
-<%= form_with model: @post, local: true do |form| %>
+<%= form_with model: @post, local: true do |form| %> 
   <table>
     <tr>
       <th><%= form.label :time, "Dive NO." %></th>
@@ -46,7 +46,7 @@
     <tr>
     <tr>
       <th><%= form.label :wind_direction, "風向き" %></th>
-      <td> <%= form.text_field :wind_direction, id:"wind_direction"%></td>
+      <td><%= form.text_field :wind_direction, id:"wind_direction"%></td>
     <tr>
     <tr>
       <th><%= form.label :wave, "波" %></th>

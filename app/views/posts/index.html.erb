@@ -1,12 +1,14 @@
 <div class="container">
-    Daving Log
+  <div class="top">
+    Diver's log
+      <%= link_to(posts_new_path) do %>
+        <nav class="nav">投稿ページへ!!!</nav>
+      <% end %>
+  </div>
 </div>
 
 <div class="log">
     <% @posts.each do |post| %>
       <%= link_to "Dive NO.#{post.time}",post_path(post.id), class: "top"%> 
-    <% end %>
-    <%= link_to(posts_new_path) do %>
-      <button class="button">投稿ページへ!!!</button>
     <% end %>
 </div>
