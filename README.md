@@ -1,18 +1,32 @@
 # README
 
-場所 integer
-ポイント名 integer
-天気 integer
-気温 integer
-潜水開始 integer
-残圧(開始時) integer
-残圧(終了時) integer
-潜水終了 integer
-潜水時間 integer
-水温 integer
-水深 integer
-風向き integer
-波 integer
-日時/日付 date
-魚の種類 integer
-感想 text
+# アプリケーション名   Dving Log 
+# 概要   客観的に自分の過去のダイビングを記録
+# URL   
+# 利用方法   場所や日付などを入力しDBに保存する
+# 目指した課題解決   荷物が多いダイビングで物を少なくしたいが為に置いて来がちなノートブックを、携帯やパソコンで使えるようにしたい
+# 洗い出した要件
+# ３ 	投稿機能	過去の記録を残すため	自分が経験したダイビングの情報を記入する	手打ちで入力	三日
+					
+# ３	編集機能	正しい情報の記録を残す為	一度投稿した内容に変更点があった場合修正が出来る様に	投稿した内容をDBから引き出し、上書きする	20分
+					
+# ２	トップの表示	利用者が自分の何回目の記録か瞬時にわかるようにするため	Dive No.という何回目かを記入してもらいその情報をIndexファイルに表示させる	登校時に入力したDive No.というTimeカラムの情報を表示する	一日
+
+
+#  Diving No. integer 
+#  場所 integer
+#  ポイント名 integer
+#  天気 integer
+#  気温 integer
+#  潜水開始 integer
+#  残圧(開始時) integer
+#  残圧(終了時) integer
+#  潜水終了 integer
+#  潜水時間 integer
+#  水温 integer
+#  水深 integer
+#  風向き integer
+#  波 integer
+#  日時/日付 date
+#  魚の種類 integer
+#  感想 text
